@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f4ee">
+  <meta name="description" content="试听 Mocha、乔布斯、巴菲特、Momo 和奥德修斯的五种音色，并复制对应的千问音色 ID。">
+  <title>Mocha 声音库 · 五种音色试听</title>
+  <link rel="icon" href="./mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./player.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><img src="./mark.svg" alt="" width="25" height="25"> MOCHA / VOICE LIBRARY</p>
+        <h1>Mocha <span>声音库</span></h1>
+        <p class="intro">五种音色，六段试听。听一段声音，复制它的音色 ID。</p>
+      </div>
+      <svg class="hero-wave" viewBox="0 0 230 112" fill="none" aria-hidden="true">
+        <path d="M10 56h210" stroke="#c7b4e7" stroke-width="1" stroke-dasharray="2 5"/>
+        <g stroke-linecap="round" stroke-width="8">
+          <path d="M24 50v12m20-21v30m20-41v52m20-65v78m20-64v50m20-45v40m20-52v64m20-47v30m20-24v18m20-13v8" stroke="#52328a"/>
+          <path d="M84 17v17m60-10v15" stroke="#e79186"/>
+        </g>
+      </svg>
+    </header>
+    <section class="catalog" aria-labelledby="catalog-title">
+      <h2 id="catalog-title" class="sr-only">全部音色</h2>
+
+      <article class="voice-card mocha" aria-labelledby="mocha-name">
+        <div class="voice-header">
+          <span class="voice-mark" aria-hidden="true">M</span>
+          <div class="voice-name">
+            <h3 id="mocha-name">Mocha</h3>
+            <p lang="en">Brand voice</p>
+          </div>
+          <span class="tag">录音复刻</span>
+        </div>
+        <p class="tone">柔和、轻松，带一点俏皮。</p>
+        <div class="tracks">
+
+          <div class="track">
+            <div class="track-meta">
+              <span>英文试听 <small>5.6 秒</small></span>
+              <a href="./audio/mocha-en.wav" download aria-label="下载 Mocha 英文试听">下载 WAV</a>
+            </div>
+            <audio controls preload="none" aria-label="Mocha 英文试听" src="./audio/mocha-en.wav"></audio>
+          </div>
+          <div class="track">
+            <div class="track-meta">
+              <span>普通话试听 <small>6.8 秒</small></span>
+              <a href="./audio/mocha-zh.wav" download aria-label="下载 Mocha 普通话试听">下载 WAV</a>
+            </div>
+            <audio controls preload="none" aria-label="Mocha 普通话试听" src="./audio/mocha-zh.wav"></audio>
+          </div>
+        </div>
+        <div class="voice-id">
+          <span class="id-label">VOICE ID</span>
+          <button type="button" data-copy="mocha-id" aria-label="复制 Mocha 音色 ID">复制 ID</button>
+          <code id="mocha-id" aria-label="Mocha 音色 ID" tabindex="0">qwen-audio-3.1-tts-plus-mocharec1-4a14c77ea3264069ba915f5bb3246253</code>
+          <output class="sr-only" aria-live="polite"></output>
+        </div>
+      </article>
+      <article class="voice-card jobs" aria-labelledby="jobs-name">
+        <div class="voice-header">
+          <span class="voice-mark" aria-hidden="true">SJ</span>
+          <div class="voice-name">
+            <h3 id="jobs-name">乔布斯</h3>
+            <p lang="en">Steve Jobs</p>
+          </div>
+          <span class="tag">AI 复刻试听</span>
+        </div>
+        <p class="tone">英文访谈声线。</p>
+        <div class="tracks">
+
+          <div class="track">
+            <div class="track-meta">
+              <span>英文试听 <small>6.4 秒</small></span>
+              <a href="./audio/steve-jobs-en.wav" download aria-label="下载 乔布斯 英文试听">下载 WAV</a>
+            </div>
+            <audio controls preload="none" aria-label="乔布斯 英文试听" src="./audio/steve-jobs-en.wav"></audio>
+          </div>
+        </div>
+        <div class="voice-id">
+          <span class="id-label">VOICE ID</span>
+          <button type="button" data-copy="jobs-id" aria-label="复制 乔布斯 音色 ID">复制 ID</button>
+          <code id="jobs-id" aria-label="乔布斯 音色 ID" tabindex="0">qwen-audio-3.1-tts-plus-jobsd826-9c856c4aa0ed4abba4a23b7a4e445c16</code>
+          <output class="sr-only" aria-live="polite"></output>
+        </div>
+      </article>
+      <article class="voice-card buffett" aria-labelledby="buffett-name">
+        <div class="voice-header">
+          <span class="voice-mark" aria-hidden="true">WB</span>
+          <div class="voice-name">
+            <h3 id="buffett-name">巴菲特</h3>
+            <p lang="en">Warren Buffett</p>
+          </div>
+          <span class="tag">AI 复刻试听</span>
+        </div>
+        <p class="tone">英文访谈声线。</p>
+        <div class="tracks">
+
+          <div class="track">
+            <div class="track-meta">
+              <span>英文试听 <small>9.2 秒</small></span>
+              <a href="./audio/warren-buffett-en.wav" download aria-label="下载 巴菲特 英文试听">下载 WAV</a>
+            </div>
+            <audio controls preload="none" aria-label="巴菲特 英文试听" src="./audio/warren-buffett-en.wav"></audio>
+          </div>
+        </div>
+        <div class="voice-id">
+          <span class="id-label">VOICE ID</span>
+          <button type="button" data-copy="buffett-id" aria-label="复制 巴菲特 音色 ID">复制 ID</button>
+          <code id="buffett-id" aria-label="巴菲特 音色 ID" tabindex="0">qwen-audio-3.1-tts-plus-buffett26-8e56feae90054940a9694c77655d3aa8</code>
+          <output class="sr-only" aria-live="polite"></output>
+        </div>
+      </article>
+      <article class="voice-card momo" aria-labelledby="momo-name">
+        <div class="voice-header">
+          <span class="voice-mark" aria-hidden="true">Mo</span>
+          <div class="voice-name">
+            <h3 id="momo-name">Momo</h3>
+            <p lang="en">Anime cat character</p>
+          </div>
+          <span class="tag">声音设计</span>
+        </div>
+        <p class="tone">清亮、亲切，带一点俏皮。</p>
+        <div class="tracks">
+
+          <div class="track">
+            <div class="track-meta">
+              <span>英文试听 <small>5.0 秒</small></span>
+              <a href="./audio/momo-en.wav" download aria-label="下载 Momo 英文试听">下载 WAV</a>
+            </div>
+            <audio controls preload="none" aria-label="Momo 英文试听" src="./audio/momo-en.wav"></audio>
+          </div>
+        </div>
+        <div class="voice-id">
+          <span class="id-label">VOICE ID</span>
+          <button type="button" data-copy="momo-id" aria-label="复制 Momo 音色 ID">复制 ID</button>
+          <code id="momo-id" aria-label="Momo 音色 ID" tabindex="0">qwen-audio-3.1-tts-flash-vd-momocat-ffafe9c0d7764cef97c5a777637ea34c</code>
+          <output class="sr-only" aria-live="polite"></output>
+        </div>
+      </article>
+      <article class="voice-card odysseus" aria-labelledby="odysseus-name">
+        <div class="voice-header">
+          <span class="voice-mark" aria-hidden="true">O</span>
+          <div class="voice-name">
+            <h3 id="odysseus-name">奥德修斯</h3>
+            <p lang="en">Odysseus · The Odyssey</p>
+          </div>
+          <span class="tag">声音设计</span>
+        </div>
+        <p class="tone">温厚的中低音，节奏从容。</p>
+        <div class="tracks">
+
+          <div class="track">
+            <div class="track-meta">
+              <span>英文试听 <small>7.0 秒</small></span>
+              <a href="./audio/odysseus-en.wav" download aria-label="下载 奥德修斯 英文试听">下载 WAV</a>
+            </div>
+            <audio controls preload="none" aria-label="奥德修斯 英文试听" src="./audio/odysseus-en.wav"></audio>
+          </div>
+        </div>
+        <div class="voice-id">
+          <span class="id-label">VOICE ID</span>
+          <button type="button" data-copy="odysseus-id" aria-label="复制 奥德修斯 音色 ID">复制 ID</button>
+          <code id="odysseus-id" aria-label="奥德修斯 音色 ID" tabindex="0">qwen-audio-3.1-tts-flash-vd-odysseus-cbdf7674b4a84840a0ee41f8ec3e9194</code>
+          <output class="sr-only" aria-live="polite"></output>
+        </div>
+      </article>
+    </section>
+    <footer>MOCHA <span aria-hidden="true">·</span> 五种音色 <span aria-hidden="true">·</span> 六段试听</footer>
+  </main>
+</body>
+</html>
